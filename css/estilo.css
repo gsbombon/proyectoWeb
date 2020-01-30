@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+width: 100%;
+height:100%;
+margin: 0 auto;
+background-image:url(../img/fondo2.jpg);
+background-size:cover;
+
+}
+#button2{
+	background-color:#6C0593;
+	  width:150px;
+      height:40px;
+	  font-size:18px;
+	  font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight:bold;
+	}
+.campos{
+			width: 300px;
+			height: 40px;
+			font-size:18px;
+	  font-family:Georgia, "Times New Roman", Times, serif;
+	background: #EFEFEF;
+			
+		}
+.transparente{
+opacity: 0.7;
+-moz-opacity: 0.7;
+filter: alpha(opacity=70);
+-khtml-opacity: 0.7;
+}
+#form{
+	position: absolute;
+	width: 399px;
+	height: 414px;
+	z-index: 1;
+	left: 606px;
+	top: 239px;
+	background: #5D5D5D;
+	box-shadow: 0px 0px 10px saddlebrown,0px 0px 30px white;
+	font-size: 18px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.cuerpo{
+	background: #F4E4E4;
+	width: 78%;
+	
+	
+}
+
+.texto{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 30px;
+	font-weight: bold;
+	padding-left: 5%;
+	
+}
+#apDiv1{
+	font-style: italic;
+	color: #000;
+	font-weight:bold;
+	font-size:29px;
+}
+#apDiv11{
+	font-style: italic;
+	color: #000;
+	font-weight:bold;
+	font-size:24px;
+}
+#apDiv12{
+	font-style: italic;
+	color: #000;
+	font-weight:bold;
+	font-size:24px;
+}
+#apDiv13{
+	font-style: italic;
+	color: #000;
+	font-weight:bold;
+	font-size:24px;
+}
+
+
+h1{
+	color: #900;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 36px;
+	text-align: center;
+}
+label,td,a,th{
+	color:#000;
+	text-align: center;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+#login,#titulo{
+	text-align:center;
+	font-size: 36px;
+	font-family:"Comic Sans MS", cursive;
+	color:#FFF;
+}
+
+#encabezado {
+	width: 100%;
+	height: 80px;
+	text-align:center;
+	font-size: 36px;
+	color:#FFF;
+	background-color:#5E03C0;
+	padding-top:0;
+	margin-top:0;
+	}
+	
+#apDiv2{
+	background-color:#FFF;
+	border-top:#000000 20px solid;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight:bold;
+	font-size:18px;
+	}
+
+#form1{
+	background-color:#FFF;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:18px;
+	}
+	
+	
+#table2, #table3{
+	/*width: 419px;
+	height: 309px;*/
+	text-align: center;
+	font-size: 16px;
+	color: #000;
+	background-color:#FFF;
+	}
+	
+#ladoIzq {
+	width: 22%;
+	height:100%;
+	float:left;
+	text-align:center;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:18px;
+	color:#999;
+	background-color:#333;
+	}
+
+p2{
+	font-size:16px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#00F;
+	text-align:justify;
+	}
+
+
+#ladoDer{
+	width: 80%;
+	height:78%;
+	float:right;
+	text-align:center;
+	font-size: 16px;
+	color:#000;
+	background-color:#FF6;
+	border-left-width:medium;
+	}
+
+#tercios li {
+  float: left;
+  width: 33%;
+  height:80%;
+  font-size:18px
+}
+
+#pintar {
+	background-color:#F00;
+	}
+footer {
+	background-color:#09C;
+	}
+
+#tituloTabla{
+	color: white;
+}
+
+@media screen and (max-width: 600px) {
+       table {
+           width:100%;
+		   border: 1px;
+       }
+       thead {
+           display: none;
+       }
+       tr:nth-of-type(2n) {
+           background-color: inherit;
+       }
+       tr td:first-child {
+           background: #f0f0f0;
+           font-weight:bold;
+           font-size:1.3em;
+       }
+       tbody td {
+           display: block;
+           text-align:center;
+       }
+       tbody td:before {
+           content: attr(data-th);
+           display: block;
+           text-align:center;
+       }
+}
+
+
+
+
+@media (max-width: 576px) {
+  .login100-form {
+    padding: 43px 15px 57px 117px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login100-form {
+    padding: 43px 15px 57px 15px;
+  }
+
+  .label-input100 {
+    text-align: left;
+    position: unset;
+    top: unset;
+    left: unset;
+    width: 100%;
+    padding: 0 5px;
+  }
+}

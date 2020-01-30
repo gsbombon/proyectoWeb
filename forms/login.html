@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inicio Sesion</title>
+    <link rel="stylesheet" href="../css/master.css">
+	  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	  <script src="https://kit.fontawesome.com/d75495f56a.js"></script>
+	  <script src="../js/validaciones.js"></script>
+  </head>
+  <body>
+    <div class="login-box">
+      <img src="../img/logo.jpg" class="avatar" alt="Avatar Image">
+      <h1>Iniciar Sesion</h1>
+      <form action="../php/entrar.php" method="POST">
+        <!-- USERNAME INPUT -->
+        <label for="username">Correo</label>
+		<input type="email" placeholder="Ingrese correo"  name="correo" id="correo" onBlur="validarCorreo(this.id)" required> 
+        <!-- PASSWORD INPUT -->
+        <label for="password">Contraseña</label>
+        <input type="password" placeholder="Ingrese contraseña" name="contraseña" id="contraseña" onblur="campoVacio(this.id)" required>
+		  <br><br>
+		  <div class="g-recaptcha" data-sitekey="6LcKiswUAAAAAGllEvIomgYBorDgsRc4zW_9si8u" data-theme="dark" require ></div>
+      <br>
+        <input type="submit" value="Ingresar">
+        <a href="registro.html">Crear usuario nuevo</a><br>
+      </form>
+    </div>
+	  
+  </body>
+</html>
