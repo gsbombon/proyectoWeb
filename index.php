@@ -9,6 +9,6 @@
 	<?php
     header("Location: forms/login.html"); 
     ?>
-		</center>
+	</center>
 </body>
 </html>

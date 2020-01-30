@@ -23,6 +23,7 @@ function decrypt($string, $key) {
    }
    return $result;
 }
+
 function validarCaptcha(){
 		if(isset($_POST["g-recaptcha-response"]) && $_POST["g-recaptcha-response"]){
 
@@ -69,8 +70,10 @@ $Obj_UsuarioBD=new UsuarioDB();
  if ($result=$Obj_UsuarioBD->entrar($correo,$contraseña))
     {
 	  	if ($result->num_rows > 0) {
+	?>	<script> alert("Usuario Correcto")</script> <?php
     echo '<script languaje="Javascript">location.href="../forms/inicio.html"</script>';
   }else{
+	?>	<script> alert("Usuario Incorrecto")</script> <?php
     echo '<script languaje="Javascript">location.href="../forms/login.html"</script>';
   }
 	}
