@@ -14,10 +14,14 @@ body {
 	padding-left: 20px;
 	text-align: right;
 }
-.imagen{
-	border-radius: 15px;
-	box-shadow: 1px 8px 15px 5px #000;
+.imagen:hover{
+	filter: grayscale(100%);
+ 	-webkit-filter: grayscale(100%);
+	transition:filter 0.6s;
+	-webkit-transition:-webkit-filter 1s;
+	box-shadow: 1px 1px 10px 1px orange;
 }
+
 .table{
 	margin: 0 50px 0 50;
 	width: 80%;
